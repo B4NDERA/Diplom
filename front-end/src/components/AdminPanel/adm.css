@@ -1,0 +1,110 @@
+*,
+after,
+before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: url("../../../public/img/bgc.png");
+    color: #fff;
+}
+
+ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.container-admin{
+    display: flex;
+    flex-direction: row;
+}
+
+.admin-block{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+    background-color: #111111;
+}
+
+.admin-panel-title{
+    display: block;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}   
+
+.admin-subtitle-line{
+    width: 90%;
+    height: 3px;
+    background: linear-gradient(45deg, #f74b4bfb, #3b0202);
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.admin-menu{
+    margin-top: 60px;
+    width: 100%;
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.admin-menu-links{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #f74b4bfb;
+    text-align: center;
+    padding: 15px 5px 10px 5px;
+}
+
+ .admin-menu-links:hover a{
+    color: #520101;
+    transition: .6s color;
+}
+
+.admin-content-block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 40px 0px 40px;
+}
+
+.admin-content-title{
+    display: block;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.admin-content-line{
+    width: 20%;
+    height: 3px;
+    background: linear-gradient(45deg, #f74b4bfb, #3b0202);
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 50px;
+    margin-bottom: 60px;
+}
+
+.admin-content{
+    width: 100%;
+    height: 80vh;
+    background-color: #353535;
+    border-radius: 20px;
+}

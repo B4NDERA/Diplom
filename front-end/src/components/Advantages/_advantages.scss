@@ -1,0 +1,124 @@
+.container-advantages{
+    padding-top: 100px;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.advantages-main-title{
+    display: block;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 42px;
+    color: #fff;
+    width: 810px;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.advantages-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1296px;
+    height: 320px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.advantages-content-block{
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+}
+
+#advantages-img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#advantages-title{
+    display: block;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#advantages-subtitle{
+    display: block;
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 16px;
+    color: #a3a3a3;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.advantages-line{
+    width: 100%;
+    max-width: 20%;
+    height: 5px;
+    border: none;
+    border-radius: 50px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #DF5950, #451046);
+    margin-top: 80px;
+}
+
+.partners-title-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+    height: 80px;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+#partners-img{
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-right: 30px;
+}
+
+#partners-title{
+    display: block;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 38px;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+.partner-logos-block{
+    width: 100%;
+    max-width: 1296px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.partner-logos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partner-logos-img{
+    width: 324px;
+    height: 150px;
+}
+
+#partner-logos-img{
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}

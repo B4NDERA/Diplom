@@ -1,0 +1,107 @@
+.container-teachers-page{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 150px;
+}
+
+.teachers-title-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+    height: 80px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 80px;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+#teachers-logo{
+    display: block;
+    width: 125px;
+    height: 125px;
+    margin-right: 15px;
+}
+
+.teachers-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.teachers-list-block-left{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 80px;
+}
+
+.teachers-list-block-right{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 80px;
+}
+
+.teachers-block-line{
+    width: 100%;
+    height: 4px;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    background: linear-gradient(45deg, #DF5950, #451046);
+}
+
+.teachers-block-img{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+}
+
+.teachers-block-info{
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 16px;
+    color: #a3a3a3;
+    margin-bottom: 30px;
+    padding: 60px;
+    text-align: center;
+}
+
+#teachers-img{
+    display: block;
+    width: 190px;
+    height: 190px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.teachers-img-title{
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.teachers-img-subtitle{
+    display: block;
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 16px;
+    color: #a3a3a3;
+    text-align: center;
+    margin-bottom: 30px;
+}

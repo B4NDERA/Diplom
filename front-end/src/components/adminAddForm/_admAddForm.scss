@@ -1,0 +1,69 @@
+.admin-teacher-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    height: 600px;
+    margin-top: 150px;
+}
+
+.form-input-stl{
+    display: block;
+    font-family: Lora;
+    font-weight: 400;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px 10px 30px;
+    color: #fff;
+    outline-color: #DF5950;
+    background-color: #a3a3a3;
+    opacity: 0.8;
+}
+
+#quote{
+    display: block;
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 16px;
+    resize: none;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    outline-color: #DF5950;
+    background-color: #a3a3a3;
+    opacity: 0.8;
+    color: #fff;
+}
+
+input::placeholder{
+    color: #707070;
+}
+
+#form-btn{
+    display: block;
+    font-family: Mulish;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 2px;
+    width: 320px;
+    height: 50px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(180deg, #DF5950, #451046);
+    color: #fff;
+}
+
+#form-btn:hover{
+    border: 1px solid #DF5950;
+    color: #555555;
+    transition: .6s color;
+}

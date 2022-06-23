@@ -1,0 +1,995 @@
+@media screen and (max-width: 1300px){
+    .logo-title{
+        font-size: 16px;
+    }
+   
+    .main-header{
+        background: url("../../public/img/main-screen__bgc.png") no-repeat center;
+    }
+    
+    .main-title{
+        width: 400px;
+        height: 100px;
+        margin-left: 150px;
+    }
+
+    #main-title{
+        font-size: 32px;
+    }
+
+    .timer{
+        margin-left: 140px;
+    }
+
+    .timer__items{
+        font-size: 38px;
+    }
+
+    .about-img{
+        width: 300px;
+        height: 300px;
+        margin-right: 80px;
+        margin-top: 30px;
+    }
+
+    .about-content{
+        width: 800px;
+    }
+
+    .about-title{
+        margin-top: 0px;
+        width: 350px;
+    }
+
+    #about-title{
+        font-size: 22px;
+    }
+
+    .about-subtitle{
+        width: 350px;
+    }
+
+    #about-subtitle{
+        font-size: 14px;
+    }
+
+    .about-start{
+        width: 800px;
+        margin-top: 0px;
+    }
+
+    .start-title{
+        width: 300px;
+    }
+
+    #start-title{
+        font-size: 18px;
+    }
+
+    #start-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #start-subtitle{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .rectangle-block{
+        width: 200px;
+    }
+
+    .rectangle-title{
+        font-size: 22px;
+    }
+
+    #subtitle-rectangle{
+        font-size: 12px;
+    }
+
+    #rectangle-img-100{
+        margin-top: 14px;
+        margin-bottom: 35px;
+    }
+    
+    #rectangle-img-75{
+        margin-top: 20px;
+        margin-bottom: 45px;
+    }
+    
+    #rectangle-img-50{
+        margin-top: 28px;
+        margin-bottom: 55px;
+    }
+    
+    #rectangle-img-total{
+        margin-top: 35px;
+        margin-bottom: 60px;
+    }
+
+    .advantages-main-title{
+        font-size: 28px;
+        width: 500px;
+    }
+    
+    .advantages-content{
+        max-width: 800px;
+    }
+    
+    .advantages-content-block{
+        width: 200px;
+    }
+    
+    #advantages-img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    #advantages-title{
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    
+    #advantages-subtitle{
+        font-size: 13px;
+        margin-top: 30px;
+    }
+
+    .partners-title-block{
+        width: 800px;
+        margin-top: 150px;
+        margin-left: 0px;
+    }
+    
+    #partners-img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    #partners-title{
+        font-size: 28px;
+    }
+    
+    .partner-logos-block{
+        max-width: 800px;
+        margin-top: 100px;
+    }
+    
+    .partner-logos-img{
+        width: 200px;
+        height: 150px;
+    }
+    
+    #partner-logos-img{
+        width: 150px;
+        height: 100px;
+        margin-top: 30px;
+    }
+
+    .teachers-title-block{
+        margin-left: 60px;
+    }
+
+}
+
+@media screen and (max-width: 850px){
+    .logo-title{
+        font-size: 16px;
+        
+    }
+
+    #logo{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .authorization{
+        display: none;
+    }
+
+    .header-menu{
+        display: none;
+    }
+    //ADAPTIVE-MENU
+    
+
+    .about-img{
+        width: 250px;
+        height: 250px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+    .about-content{
+        width: 500px;
+    }
+
+    .about-title{
+        margin-top: 0px;
+        width: 150px;
+    }
+
+    #about-title{
+        font-size: 16px;
+        margin-bottom: -30px;
+    }
+
+    .about-subtitle{
+        width: 250px;
+    }
+
+    #about-subtitle{
+        font-size: 12px;
+        letter-spacing: 0px;
+        word-spacing: 2px;
+    }
+
+
+    .about-start{
+        width: 400px;
+        margin-top: 0px;
+        margin-left: -20px;
+        margin: 0 auto;
+    }
+
+    .start-title{
+        width: 300px;
+    }
+
+    #start-title{
+        font-size: 16px;
+    }
+
+    #start-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #start-subtitle{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .rectangle-block{
+        width: 100px;
+    }
+
+    .rectangle-title{
+        font-size: 14px;
+    }
+
+    #subtitle-rectangle{
+        font-size: 12px;
+        text-align: center;
+        padding-right: 20px;
+    }
+
+    #rectangle-img-100{
+        margin-top: 14px;
+        margin-bottom: 35px;
+    }
+    
+    #rectangle-img-75{
+        margin-top: 17px;
+        margin-bottom: 38px;
+    }
+    
+    #rectangle-img-50{
+        margin-top: 22px;
+        margin-bottom: 43px;
+    }
+    
+    #rectangle-img-total{
+        margin-top: 25px;
+        margin-bottom: 46px;
+    }
+
+
+    .advantages-main-title{
+        font-size: 18px;
+        width: 300px;
+    }
+    
+    .advantages-content{
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin-top: 80px;
+    }
+    
+    .advantages-content-block{
+        margin: 0 auto;
+        width: 150px;
+        margin-top: 60px;
+    }
+
+    .advantages-line{
+        margin-top: 750px;
+    }
+    
+    #advantages-img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    #advantages-title{
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    
+    #advantages-subtitle{
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+    .partners-title-block{
+        width: 350px;
+        margin-top: 100px;
+        margin-left: 0px;
+    }
+    
+    #partners-img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    #partners-title{
+        font-size: 22px;
+    }
+    
+    .partner-logos-block{
+        max-width: 600px;
+        margin-top: 100px;
+    }
+    
+    .partner-logos-img{
+        width: 250px;
+        height: 150px;
+    }
+    
+    #partner-logos-img{
+        width: 200px;
+        height: 100px;
+        margin-top: 30px;
+    }
+
+  
+    
+    #program-logo{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        margin-top: 200px;
+    }
+    
+    .program-title{
+        font-size: 33px;
+        letter-spacing: 3px;
+    }
+    
+    .program-subtitle{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    
+    .program-content{
+        width: 100%;
+        max-width: 550px;
+        margin-top: 40px;
+    }
+    
+    .program-content-block-left{
+        width: 200px;
+        height: 95px;
+        margin-left: 50px;
+    }
+    
+    .program-content-line{
+        width: 4px;
+        height: 570px;
+    }
+    
+    .program-content-block-right{
+        width: 200px;
+        height: 95px;
+        margin-right: 40px;
+    }
+    
+    .program-content-block-suptitle-left{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .program-content-block-title-left{
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-bottom: 90px;
+    }
+    
+    .program-content-block-suptitle-right{
+        font-size: 14px;
+        margin-bottom: 15px;
+        margin-top: 90px;
+    }
+    
+    .program-content-block-title-right{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .teachers-title-block{
+        width: 400px;
+        margin-left: 30px;
+    }
+
+    #teachers-logo{
+        width: 90px;
+        height: 90px;
+    }
+
+    .teacher-main-title{
+        font-size: 28px;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+
+    .teachers-content{
+        width: 560px;
+    }
+
+    .teachers-content-block{
+        width: 230px;
+    }
+
+    #teachers-img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .teachers-img-title{
+        font-size: 18px;
+    }
+
+    .teachers-img-subtitle{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main-title{
+        margin: 0 auto;
+        width: 200px;
+        height: 100px;
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    #main-title{
+        font-size: 18px;
+    }
+
+    .timer{
+        margin: 0 auto;
+        margin-left: 70px;
+    }
+
+    .timer__items{
+        font-size: 34px;
+    }
+
+    .partner-logos-block{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin-top: 100px;
+    }
+    
+    .partner-logos-img{
+        margin: 0 auto;
+        width: 250px;
+        height: 150px;
+    }
+
+   .about-img{
+        width: 180px;
+        height: 180px;
+        margin-right: 20px;
+        margin-top: 100px;
+    }
+
+    .about-content{
+        width: 450px;
+    }
+
+    .about-title{
+        margin-top: 0px;
+        width: 100px;
+    }
+
+    #about-title{
+        font-size: 16px;
+        margin-bottom: -30px;
+    }
+
+    .about-subtitle{
+        width: 200px;
+    }
+
+    #about-subtitle{
+        font-size: 12px;
+        letter-spacing: 0px;
+        word-spacing: 2px;
+    }
+
+
+    #program-logo{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    
+    .program-title{
+        width: 400px;
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
+    
+    .program-subtitle{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    
+    .program-content{
+        width: 100%;
+        max-width: 450px;
+        margin-top: 40px;
+    }
+    
+    .program-content-block-left{
+        width: 150px;
+        height: 95px;
+        margin-left: 50px;
+    }
+    
+    .program-content-line{
+        width: 4px;
+        height: 650px;
+        background: linear-gradient(180deg, #C89AFC, #7C6AFA);
+        border-radius: 50px;
+    }
+    
+    .program-content-block-right{
+        width: 150px;
+        height: 95px;
+        margin-right: 40px;
+    }
+    
+    .program-content-block-suptitle-left{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .program-content-block-title-left{
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-bottom: 90px;
+    }
+    
+    .program-content-block-suptitle-right{
+        font-size: 14px;
+        margin-bottom: 15px;
+        margin-top: 90px;
+    }
+    
+    .program-content-block-title-right{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .teachers-title-block{
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    #teachers-logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    .teacher-main-title{
+        font-size: 22px;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+
+    .teachers-content{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .teachers-content-block{
+        width: 230px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    #teachers-img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .teachers-img-title{
+        font-size: 18px;
+    }
+
+    .teachers-img-subtitle{
+        font-size: 14px;
+    }
+
+    .footer-content{
+        width: 400px;
+    }
+
+    .footer-title{
+        width: 400px;
+        font-size: 28px;
+    }
+
+    .footer-subtitle{
+        width: 400px;
+        font-size: 14px;
+    }
+
+    .footer-email-lable{
+        width: 400px;
+        font-size: 16px;
+    }
+
+    .footer-email-btn{
+        width: 120px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .main-title{
+        margin: 0 auto;
+        width: 200px;
+        height: 100px;
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    #main-title{
+        font-size: 18px;
+    }
+
+    .timer{
+        margin: 0 auto;
+        margin-left: 10px;
+    }
+
+    .timer__items{
+        font-size: 32px;
+    }
+
+    .about-img{
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+        margin-top: 130px;
+        margin-left: 10px;
+    }
+
+    .about-content{
+        width: 380px;
+    }
+
+    .about-title{
+        margin-top: 0px;
+        width: 180px;
+    }
+
+    #about-title{
+        font-size: 16px;
+    }
+
+    .about-subtitle{
+        width: 180px;
+    }
+
+    #about-subtitle{
+        font-size: 12px;
+    }
+
+    .about-start{
+        width: 380px;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+
+    .start-title{
+        width: 300px;
+    }
+
+    #start-title{
+        font-size: 16px;
+    }
+
+    #start-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #start-subtitle{
+        width: 300px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .rectangle-block{
+        width: 95px;
+    }
+
+    .rectangle-title{
+        font-size: 14px;
+    }
+
+    #subtitle-rectangle{
+        font-size: 12px;
+    }
+
+    #rectangle-img-100{
+        margin-top: 17px;
+        margin-bottom: 35px;
+    }
+    
+    #rectangle-img-75{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    
+    #rectangle-img-50{
+        margin-top: 24px;
+        margin-bottom: 45px;
+    }
+    
+    #rectangle-img-total{
+        margin-top: 27px;
+        margin-bottom: 50px;
+    }
+
+
+    #program-logo{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    
+    .program-title{
+        width: 350px;
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
+    
+    .program-subtitle{
+        width: 350px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    
+    .program-content{
+        width: 100%;
+        max-width: 320px;
+        margin-top: 40px;
+    }
+    
+    .program-content-block-left{
+        width: 100px;
+        height: 95px;
+        margin-left: 50px;
+    }
+    
+    .program-content-line{
+        width: 4px;
+        height: 760px;
+        background: linear-gradient(180deg, #C89AFC, #7C6AFA);
+        border-radius: 50px;
+    }
+    
+    .program-content-block-right{
+        width: 100px;
+        height: 95px;
+        margin-right: 40px;
+    }
+    
+    .program-content-block-suptitle-left{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .program-content-block-title-left{
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-bottom: 90px;
+    }
+    
+    .program-content-block-suptitle-right{
+        font-size: 14px;
+        margin-bottom: 15px;
+        margin-top: 90px;
+    }
+    
+    .program-content-block-title-right{
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .footer-content{
+        width: 360px;
+    }
+
+    .footer-title{
+        width: 360px;
+        font-size: 22px;
+    }
+
+    .footer-subtitle{
+        width: 360px;
+        font-size: 14px;
+    }
+
+    .footer-email-lable{
+        width: 360px;
+        font-size: 16px;
+    }
+
+    .footer-email-btn{
+        width: 120px;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .main-title{
+        margin: 0 auto;
+        width: 200px;
+        height: 100px;
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    #main-title{
+        font-size: 14px;
+    }
+
+    .timer{
+        margin-left: 0px;
+        width: 100px;
+    }
+
+    .timer__items{
+    
+        font-size: 20px;
+    }
+
+    .about-img{
+        width: 120px;
+        height: 120px;
+        margin-right: 20px;
+        margin-top: 180px;
+        margin-left: 10px;
+    }
+
+    .about-content{
+        width: 360px;
+    }
+
+    .about-title{
+        margin-top: 0px;
+        width: 180px;
+    }
+
+    #about-title{
+        font-size: 16px;
+    }
+
+    .about-subtitle{
+        width: 180px;
+    }
+
+    #about-subtitle{
+        font-size: 12px;
+    }
+
+
+    .partner-logos-block{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin-top: 100px;
+    }
+    
+    .partner-logos-img{
+        margin: 0 auto;
+        width: 200px;
+        height: 150px;
+    }
+    
+    #partner-logos-img{
+        width: 150px;
+        height: 100px;
+        margin-top: 30px;
+    }
+
+    #partners-title{
+        font-size: 14px;
+    }
+
+    .about-start{
+        width: 360px;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+
+    .start-title{
+        width: 300px;
+    }
+
+    #start-title{
+        font-size: 16px;
+    }
+
+    #start-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #start-subtitle{
+        width: 300px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .rectangle-block{
+        width: 90px;
+    }
+
+    .rectangle-title{
+        font-size: 14px;
+    }
+
+    #subtitle-rectangle{
+        font-size: 12px;
+    }
+
+    #rectangle-img-100{
+        margin-top: 17px;
+        margin-bottom: 38px;
+    }
+    
+    #rectangle-img-75{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    
+    #rectangle-img-50{
+        margin-top: 24px;
+        margin-bottom: 45px;
+    }
+    
+    #rectangle-img-total{
+        margin-top: 26px;
+        margin-bottom: 48px;
+    }
+
+
+}

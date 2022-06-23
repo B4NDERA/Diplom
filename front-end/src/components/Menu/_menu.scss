@@ -1,0 +1,63 @@
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.logo-title{
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #DF5950;
+  
+}
+
+#logo{
+    margin-right: 10px;
+}
+
+/*MENU*/
+.header-menu{
+    font-family: Lora;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 50px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    .menu-links {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 40px;
+    }
+}
+
+
+.menu-links:hover {
+    color: #DF5950;
+    transition: .6s color;
+}
+
+
+ .authorization-btn{
+    display: block;
+    font-family: Lora;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    border: none;
+    padding-top: 10px;
+    border-radius: 50px;
+    height: 40px;
+    width: 160px;
+    background: linear-gradient(45deg, #C89AFC, #7C6AFA);
+    color: #fff;
+    cursor: pointer;
+}
+
+.authorization-btn:hover{
+    color:#d8b5fa;
+    transition: .6s color;
+}

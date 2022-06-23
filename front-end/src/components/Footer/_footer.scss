@@ -1,0 +1,117 @@
+.container-footer{
+    margin-top: 200px;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.footer-content{
+    width: 550px;
+    height: 220px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.footer-title{
+    display: block;
+    width: 550px;
+    height: 60px;
+    margin: 0 auto;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 42px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.footer-subtitle{
+    display: block;
+    width: 415px;
+    height: 60px;
+    margin: 0 auto;
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 16px;
+    color: #a3a3a3;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-email-lable{
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 45px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 50px;
+    background-color:#a3a3a3;
+    opacity: 0.5;
+    outline: none;
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 18px;
+    color: #8b0303;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.footer-email-btn{
+    display: block;
+    position: relative;
+    float: right;
+    width: 160px;
+    height: 45px;
+    border:none;
+    border-radius: 50px;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    background: linear-gradient(45deg, #DF5950, #451046);
+    cursor: pointer;
+}
+
+.footer-email-btn:hover{
+    color: #a3a3a3;
+    border: 1px solid #a3a3a3;
+    transition: 0.4s color;
+}
+
+.footer-links-block{
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-links{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #C89AFC, #7C6AFA);
+    padding: 10px;
+}
+
+#footer-link{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.footer-rights{
+    display: block;
+    text-align: center;
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 18px;
+    color: #6e6e6e;
+}

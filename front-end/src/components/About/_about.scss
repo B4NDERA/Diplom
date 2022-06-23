@@ -1,0 +1,152 @@
+/*ABOUT-START*/
+.container-about{
+    padding-top: 200px;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    height: 542px;
+    margin: 0 auto;
+}
+
+.about-img{
+    display: block;
+    width: 525px;
+}
+
+.about-title{
+    width: 560px;
+    height: 70px;
+    margin-top: 60px;
+    margin-right: 100px;
+}
+
+#about-title{
+    text-transform: uppercase;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 34px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.about-subtitle{
+    margin-top: 50px;
+    width: 640px;
+    height: 160px;
+    text-align: left;
+}
+
+#about-subtitle{
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 18px;
+    color: #a3a3a3;
+    line-height: 25px;
+    word-spacing: 8px;
+}
+
+.about-start{
+    width: 100%;
+    max-width: 1296px;
+    height: 552px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.start-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+    height: 80px;
+}
+
+#start-img{
+    margin-right: 20px;
+    height: 80px;
+}
+
+#start-title{
+    display: block;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 42px;
+    color: #fff;
+    margin-bottom: -30px;
+    letter-spacing: 3px;
+}
+
+#start-subtitle{
+    display: block;
+    width: 400px;
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 18px;
+    color: #a3a3a3;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.start-infographic{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 250px;
+    margin-top: 80px;
+}
+
+.rectangle-block{
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+    text-align: left;
+}
+
+.rectangle-title{
+    display: block;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+}
+
+#rectangle-img-100{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+#rectangle-img-75{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+#rectangle-img-50{
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+
+#rectangle-img-total{
+    display: block;
+    margin-top: 55px;
+    margin-bottom: 70px;
+}
+
+#subtitle-rectangle{
+    display: block;
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 14px;
+    color: #a3a3a3;
+    padding-right: 40px;
+}
+/*ABOUT-END*/

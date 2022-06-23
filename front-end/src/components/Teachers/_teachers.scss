@@ -1,0 +1,96 @@
+.container-teachers{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.teachers-title-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 600px;
+    height: 80px;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 80px;
+}
+
+#teachers-logo{
+    display: block;
+    width: 125px;
+    height: 125px;
+    margin-right: 15px;
+}
+
+.teacher-main-title{
+    display: block;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 38px;
+    color: #fff;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+
+.teachers-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.teachers-content-block{
+    width: 366px;
+}
+
+#teachers-img{
+    display: block;
+    width: 195px;
+    height: 195px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.teachers-img-title{
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.teachers-img-subtitle{
+    display: block;
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 16px;
+    color: #a3a3a3;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.teachers-img-btn{
+    display: block;
+    width: 145px;
+    height: 45px;
+    margin: 0 auto;
+    background-color: #000;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.teachers-img-btn:hover{
+    color:#a3a3a3;
+    transition: 0.4s color;
+}
