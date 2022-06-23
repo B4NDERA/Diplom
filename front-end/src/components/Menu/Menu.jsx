@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
-const Menu = (isAdmin) => {
+import { useSelector } from "react-redux";
+const Menu = () => {
+    const { isAdmin } = useSelector(state => state.auth)
     return(
         <nav className="header-nav">
             <div className="header-logo">

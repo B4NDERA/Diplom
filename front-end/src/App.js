@@ -13,18 +13,13 @@ import WOW from "wowjs"
 
 const App = () => {
   const dispatch = useDispatch();
-  const { teachers } = useSelector(state => state.admin)
-  const { courses } = useSelector(state => state.admin)
+  const { teachers, courses } = useSelector(state => state.admin)
 
   useEffect(() => {
     dispatch(getTeachers());
-  }, []) 
-  useEffect(() => {
     dispatch(getCourse());
   }, []) 
 
-  
-  
   useEffect(() => {
     new WOW.WOW({
       live: false

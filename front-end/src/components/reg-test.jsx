@@ -3,7 +3,9 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux/es/exports'
 import { userRegister } from '../store/actions/Actions'
+import { useNavigate } from 'react-router-dom'
 const Reg = () => {
+    const navigate = useNavigate();
 
     const dispatch = useDispatch();
 
@@ -13,8 +15,6 @@ const Reg = () => {
         confirmPassword: "",
         email: "",
     })
-
-    const [isAdmin, setAdmin] = useState(false)
 
     const inputHendle = (e) => {
         setstate({
@@ -26,21 +26,19 @@ const Reg = () => {
     const register = e => {
         e.preventDefault()
         const {login, password, email, confirmPassword} = state
-
-        if (email === "admin@gmail.com") {
-            setAdmin(true)
-        }
         
         const data = {
             login: login,
             email: email,
             password: password,
-            isAdmin: isAdmin
         }
 
         if (confirmPassword === password) {
             dispatch(userRegister(data));
+            navigate("/")
         }
+
+
     }
     return(
         <div className="register">

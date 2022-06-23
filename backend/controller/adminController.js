@@ -1,10 +1,11 @@
 const teachersSchema = require("../models/adminModel")
 const courseSchema = require("../models/courseModel")
 const userSchema = require("../models/userModel")
+const bcrypt = require("bcrypt")
 const mailingListSchema = require("../models/mailingListModel")
 const feedbackSchema = require("../models/feedbackModel")
 const Serializer = require("sequelize-to-json")
-const formidable = require("formidable")
+const jwt = require("jsonwebtoken")
 
 
 module.exports.createTeacher = async (req, res) => {
@@ -116,18 +117,50 @@ module.exports.getCourse = async (req, res) => {
 
 
 module.exports.register = async (req, res) => {
-    const { login, email, password, isAdmin } = req.body
-
+    const { login, email, password } = req.body
     try {
-        const data = {
-            login: login,
-            email: email,
-            password: password
-        }
-        await userSchema.create(data)
-
-        res.status(200).json({
-            isAdmin: isAdmin, 
+        await userSchema.findOne({ 
+            where: {
+                email: email 
+            }
+        }).then((checkUser) => {
+            if (checkUser) {
+                res.status(404).json({error:{errorMessage:["Your email already exited"]}})
+            } else {
+                bcrypt.hash(password, 10).then((password) => {
+                    const data = {
+                        login: login,
+                        email: email,
+                        password: password,
+                    }
+                    userSchema.create(data).then((userCreate) => {
+                        const token = jwt.sign({
+                            id: userCreate.id,
+                            email: userCreate.email,
+                            login: userCreate.login,
+                            registerTime: userCreate.createAt
+                        }, process.env.SECRET, {expiresIn: process.env.TOKEN_EXP})
+            
+                        const options = {
+                            expires: new Date(Date.now() + process.env.COOKIE_EXP*24*60*60*1000)
+                        }
+            
+                        if (email === "admin@gmail.com") {
+                            res.status(201).cookie("authTokenBuild", token, options).json({
+                                isAdmin: true, 
+                                token
+                            })
+                        } else {
+                            res.status(201).cookie("authTokenBuild", token, options).json({
+                                isAdmin: false, 
+                                token
+                            })
+                        }
+                    })
+                })
+                
+    
+            }
         })
     } catch(error) {
         res.status(404).json({error:{errorMessage:["Internal server error"]}})

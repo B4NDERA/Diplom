@@ -2,6 +2,22 @@ import axios from "axios"
 import { CREATE_COURSE_SUCCESS, GET_COURSES, GET_FRIENDS, REGISTER_SUCCESS } from "../types/adminTypes"
 
 
+export const userRegister = data => async(dispatch) => {
+    try {
+        const response = await axios.post("http://localhost:5000/api/build-pc/register", data)
+        localStorage.setItem("authTokenBuild", response.data.token)
+        dispatch({
+            type: REGISTER_SUCCESS,
+            payload: {
+                isAdmin : response.data.isAdmin,
+                token: response.data.token
+            }
+        })
+    } catch (error) {
+        console.log(error.response.data)
+    }
+}
+
 export const createTeacher = async(data) => {
     try {
         const response = await axios.post("http://localhost:5000/api/build-pc/create-teacher", data)
@@ -90,20 +106,7 @@ export const getCourse = () => async(dispatch) => {
     }
 }
 
-export const userRegister = data => async(dispatch) => {
-    try {
-        const response = await axios.post("http://localhost:5000/api/build-pc/register", data)
-        console.log(response)
-        dispatch({
-            type: REGISTER_SUCCESS,
-            payload: {
-                isAdmin : response.data.isAdmin
-            }
-        })
-    } catch (error) {
-        console.log(error.response.data)
-    }
-}
+
 
 
 

@@ -1,9 +1,5 @@
 import Menu from "../Menu/Menu"
-import { useSelector, useDispatch } from "react-redux";
 const Header = () => {
-    // const dispatch = useDispatch();
-    // const [ isAdmin ] = useSelector(state => state.auth)
-
     return(
         <header className="main-header">
             <div className="container-main">
