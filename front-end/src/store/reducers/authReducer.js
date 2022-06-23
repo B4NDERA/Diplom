@@ -1,6 +1,4 @@
-// import { REGISTER_FAIL, REGISTER_SUCCESS, SUCCESS_MESSAGE_CLEAR, USER_LOGIN_SUCCESS, USER_LOGIN_FAIL, LOGOUT_SUCCESS } from  "../types/authType"
-// import deCodeToken from  "jwt-decode"
-import {CREATE_COURSE_SUCCESS, REGISTER_SUCCESS} from "../types/adminTypes";
+import { REGISTER_SUCCESS, LOGOUT_SUCCESS} from "../types/adminTypes";
 import deCodeToken from  "jwt-decode"
 
 const authState = {
@@ -38,6 +36,14 @@ export const authReducer = (state = authState, action) => {
             isAdmin: payload.isAdmin,
             myInfo: myInfo,
             authenticate: true,
+        }
+    }
+
+    if(type === LOGOUT_SUCCESS) {
+        return {
+            ...state,
+            authenticate : false,
+            myInfo: ""
         }
     }
 

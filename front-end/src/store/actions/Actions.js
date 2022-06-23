@@ -1,5 +1,5 @@
 import axios from "axios"
-import { CREATE_COURSE_SUCCESS, GET_COURSES, GET_FRIENDS, REGISTER_SUCCESS } from "../types/adminTypes"
+import { CREATE_COURSE_SUCCESS, GET_FRIENDS, REGISTER_SUCCESS, LOGOUT_SUCCESS } from "../types/adminTypes"
 
 
 export const userRegister = data => async(dispatch) => {
@@ -17,6 +17,20 @@ export const userRegister = data => async(dispatch) => {
         console.log(error.response.data)
     }
 }
+
+export const userLogOut = () => async(dispatch) => {
+    try {
+        const response = await axios.post("http://localhost:5000/api/build-pc/user-logout")
+        if(response.data.success) {
+            localStorage.removeItem("authTokenBuild")
+            dispatch({
+                type: LOGOUT_SUCCESS
+            }) 
+        }
+    } catch (error) {
+        
+    }
+} 
 
 export const createTeacher = async(data) => {
     try {

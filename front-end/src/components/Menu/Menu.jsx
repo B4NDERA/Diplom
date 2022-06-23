@@ -1,7 +1,17 @@
 import { Link } from "react-router-dom"
-import { useSelector } from "react-redux";
+import { useSelector } from "react-redux"
+import { FiLogOut } from "react-icons/fi"
+import { useDispatch } from "react-redux"
+import { userLogOut } from "../../store/actions/Actions"
 const Menu = () => {
-    const { isAdmin } = useSelector(state => state.auth)
+    const { isAdmin, authenticate, myInfo } = useSelector(state => state.auth)
+    
+    const dispatch = useDispatch()
+    
+    const logOut = () => {
+        dispatch(userLogOut())
+    }
+
     return(
         <nav className="header-nav">
             <div className="header-logo">
@@ -17,11 +27,14 @@ const Menu = () => {
                     isAdmin ? <Link to="/admin" className="menu-links">Адмін</Link> : <></>
                 }
             </div>
-
-           
-
             <div>
-                <Link to="/reg" className="authorization-btn" id="authorization-btn"> Особистий кабінет</Link>
+                {
+                    authenticate ?  
+                    <>
+                        <>{myInfo.login}</>
+                        <FiLogOut onClick={logOut}/>
+                    </>  : <Link to="/reg" className="authorization-btn" id="authorization-btn">Register</Link>
+                }
             </div>
         </nav>
     )

@@ -167,4 +167,9 @@ module.exports.register = async (req, res) => {
     }
 }
 
+module.exports.userLogout = async (req, res) => { 
+    res.status(201).cookie("authTokenBuild", "").json({
+        success: true,
+    })
+}
 
