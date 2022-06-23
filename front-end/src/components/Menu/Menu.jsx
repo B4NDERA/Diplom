@@ -31,7 +31,7 @@ const Menu = () => {
                 {
                     authenticate ?  
                     <>
-                        <>{myInfo.login}</>
+                        <>{isAdmin? <></> : myInfo.login}</>
                         <FiLogOut onClick={logOut}/>
                     </>  : <Link to="/reg" className="authorization-btn" id="authorization-btn">Register</Link>
                 }

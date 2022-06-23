@@ -1,4 +1,4 @@
-import { REGISTER_SUCCESS, LOGOUT_SUCCESS} from "../types/adminTypes";
+import { REGISTER_SUCCESS, LOGOUT_SUCCESS, USER_LOGIN_SUCCESS} from "../types/adminTypes";
 import deCodeToken from  "jwt-decode"
 
 const authState = {
@@ -29,7 +29,7 @@ if(getToken) {
 export const authReducer = (state = authState, action) => {
     const {payload, type} = action
     
-    if(type === REGISTER_SUCCESS) {
+    if(type === REGISTER_SUCCESS || type === USER_LOGIN_SUCCESS) {
         const myInfo = tokenDecode(payload.token)
         return {
             ...state,

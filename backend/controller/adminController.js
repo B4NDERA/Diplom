@@ -114,6 +114,56 @@ module.exports.getCourse = async (req, res) => {
     }
 }
 
+module.exports.userLogin = async (req, res) => {
+    
+    const {email, password} = req.body
+    
+    try {
+        const checkUser = await userSchema.findOne({ 
+            where: {
+                email: email 
+            }
+        })
+
+        if(checkUser) {
+            const matchPassword = await bcrypt.compare(password, checkUser.password)
+
+            if(matchPassword) {
+                const token = jwt.sign({
+                    id: checkUser.id,
+                    email: checkUser.email,
+                    login: checkUser.login,
+                    registerTime: checkUser.createAt
+                }, process.env.SECRET, {expiresIn: process.env.TOKEN_EXP})
+
+                const options = {
+                    expires: new Date(Date.now() + process.env.COOKIE_EXP*24*60*60*1000)
+                }
+                
+                if (email === "admin@gmail.com") {
+                    res.status(201).cookie("authTokenBuild", token, options).json({
+                        isAdmin: true, 
+                        token
+                    })
+                } else {
+                    res.status(201).cookie("authTokenBuild", token, options).json({
+                        isAdmin: false, 
+                        token
+                    })
+                }
+            } else {
+                res.status(404).json({error:{errorMessage:["Your password not valid"]}})
+            }
+        } else {
+            res.status(404).json({error:{errorMessage:["Your email not found"]}})
+        }
+
+    } catch (error) {
+        res.status(404).json({error:{errorMessage:["Internal server error"]}})
+    }
+
+}
+
 
 
 module.exports.register = async (req, res) => {
