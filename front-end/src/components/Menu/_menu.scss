@@ -20,6 +20,8 @@
 
 /*MENU*/
 .header-menu{
+    display: flex;
+    justify-content: flex-end;
     font-family: Lora;
     text-transform: uppercase;
     font-weight: 700;
@@ -34,12 +36,15 @@
     }
 }
 
+.closed {
+    display: none;
+}
+
 
 .menu-links:hover {
     color: #DF5950;
     transition: .6s color;
 }
-
 
  .authorization-btn{
     display: block;
@@ -60,4 +65,15 @@
 .authorization-btn:hover{
     color:#d8b5fa;
     transition: .6s color;
+}
+
+.burger {
+   display: none;
+   cursor: pointer;
+}
+
+.burger-line {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
 }

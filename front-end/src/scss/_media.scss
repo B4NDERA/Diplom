@@ -173,7 +173,13 @@
 
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 867px){
+    .closed {
+        display: block;
+    }
+    body.open {
+        overflow: hidden;
+    }
     .logo-title{
         font-size: 16px;
         
@@ -187,10 +193,42 @@
     .authorization{
         display: none;
     }
+    
+    .burger {
+        width: 20px;
+        height: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .main-header{
+
+    }
+
+    .header-menu.open {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 10;
+        background: #000;
+        width: 101%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        .menu-links {
+            margin: 20px 0px;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
 
     .header-menu{
         display: none;
     }
+
     //ADAPTIVE-MENU
     
 
